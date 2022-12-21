@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input태그 속성 정리</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <form action = "">
+        <input type = "text" maxlength="20" name = "name" value="강동욱" disabled> maxlength 적용<br>
+        <input type = "search"> search 적용<br>
+        <input type = "url"> url 적용 <br>
+        <button> 전송 </button>
+    </form>
+
+    <br>
+    <!-- <input type = "email"> email 적용 <br>
+    <input type = "tel"> tel 적용 <br> -->
+    <form action = "">
+        <input type = "email" required> email 적용 <br>
+        <!-- required : 폼 데이터(form data)가 서버로 제출되기 전 반드시 채워져 있어야 하는 입력 필드를 명시함. -->
+        <input type = "tel" required placeholder="연락처를 입력하세요"> tel 적용 <br><br>
+        <button>전송</button>
+        <input type = "reset">
+    </form>
+
+    <br>
+    <form action="">
+        <div>
+            <!-- name이 같은것들 끼리 묶인다.[체크되었을때 체크된 박스의 value가 넘어간다] -->
+            <input type="radio" id="a1" name="aa" value="1번"><label for="a1">a1</label>
+            <input type="radio" id="a2" name="aa" value="2번"><label for="a2">a2</label>
+            <input type="radio" id="a3" name="bb" value="3번"><label for="a3">a3</label>
+            <input type="radio" id="a4" name="bb" value="4번"><label for="a4">a4</label>
+        </div>
+        <button>전송</button>
+        <br>
+        <br>
+        <div>
+            <input type="checkbox" name="hobby" id="h1" value="축구" checked><label for="h1">축구</label>
+            <input type="checkbox" name="hobby" id="h2" value="농구"><label for="h2">농구</label>
+            <input type="checkbox" name="hobby" id="h3" value="야구"><label for="h3">야구</label>
+            <input type="checkbox" name="hobby" id="h4" value="족구"><label for="h4">족구</label>
+        </div>
+        <button>전송</button>
+    </form>
+
+    <br>
+    <form action="">
+        <input type="number" name="stock" id="stock-id" min="0" max="10"><label for="stock-id">수량(<span class="stock-num"></span>)</label>
+        <input type="range" name="stock2" id="stock-id2" min="0" max="10"><label for="stock-id2">수량2(<span class="stock-num"></span>)</label>
+        <!-- span태그 : 텍스트 버젼 div태그 -->
+        <!-- 기본적으로 0 ~ 100까지 주어져 있다 [min 과 max로 최소, 최대 수량을 조절할 수 있다.]-->
+        <button>전송</button>
+    </form>
+
+    <br>
+    <form action="">
+        <input type="file">
+    </form>
+
+    <br>
+    <form action="">
+        <label for="memo-id">메모</label><br>
+        <textarea name="memo" id="memo-id" cols="30" rows="10" placeholder="메모를 입력하세요"></textarea>
+    </form>
+
+    <br>
+    <form action="">
+        <select name="programmingLanguage">
+            <option value="java">java</option>
+            <option value="c">c</option>
+            <option value="python">python</option>
+        </select>
+        <input type="list" list="input-list">
+        <datalist id="input-list">
+            <option value="java1">java1</option>
+            <option value="java2">java2</option>
+            <option value="c">c</option>
+            <option value="python">python</option>
+        </datalist>
+    </form>
+
+    <script>
+        const stock1 = document.querySelector("#stock-id");
+        const stock2 = document.querySelector("#stock-id2");
+
+        stock1.onchange = () => {
+            document.querySelectorAll(".stock-num")[0].textContent = stock1.value;
+        }
+        stock2.onchange = () => {
+            document.querySelectorAll(".stock-num")[1].textContent = stock2.value;
+        }
+    </script>
+</body>
+</html>
