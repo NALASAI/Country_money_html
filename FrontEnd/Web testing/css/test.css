@@ -1,0 +1,420 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Helvetica Neue",Helvetica,"Malgun gothic",Arial;
+    font-size: 14px;
+}
+
+header{
+    width: 100%;
+    height: 50px;
+
+    border-bottom: 1px solid #e7e7e7;
+    margin-bottom: 20px;
+    position: relative;
+
+    background-color: #383d40;
+}
+
+li{
+    display: list-item;
+}
+
+a{
+    color: #3498db;
+    text-decoration: none;
+    background: 0 0;
+}
+
+h1{
+    font-weight: 500;
+
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* 좌측 메뉴 */
+
+.container{
+    position: absolute;
+
+    left: 0;
+    right: 0;
+
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 63%;
+    height: 100%;
+}
+
+.nav_brand{
+    position: absolute;
+    align-items: center;
+
+    margin-left: -15px;
+    padding: 15px;
+    height: 50px;
+    line-height: 20px;
+
+    color: #fff;
+    font-size: 22px;
+}
+
+.small_brand{
+    display: inline-block;
+    padding: 1px 3px;
+    margin-left: 2px;
+    margin-top: -15px;
+    font-size: 11px;
+    font-weight: 400;
+    color: #aaa;
+    line-height: 12px;
+    vertical-align: middle;
+}
+
+/* 우측 메뉴 */
+
+.nav_right{
+    position: absolute;
+
+    right: 15px;
+
+    transition: 0.5s;
+}
+
+.nav_right > li{
+    position: relative;
+    display: block;
+}
+
+.nav_right li:hover > .dropdown_menu{
+    display: block;
+}
+
+.nav_right > li > a{
+    color: rgba(255,255,255,.9);
+
+    position: relative;
+    display: block;
+    padding: 15px;
+}
+
+.profile_image{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 100%;
+
+    width: 30px;
+}
+
+.name{
+    padding: 0 10px 0 35px;
+}
+
+.caret{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px solid;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+
+.dropdown_menu{
+    position: absolute;
+    display: none;
+    top: 100%;
+    z-index: 1000;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    border: 1px solid rgba(0,0,0,.15);
+    box-shadow: 0 6px 12px rgb(0 0 0 / 18%);
+    background-clip: padding-box;
+    
+    float: left;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+}
+
+.dropdown_menu:hover > li{
+    display: block;
+}
+
+.dropdown_menu > li > a{
+    display: block;
+    padding: 6px 24px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #333;
+    white-space: nowrap;
+}
+
+.divider{
+    height: 1px;
+    margin: 9px 0;
+    overflow: hidden;
+    background-color: #e5e5e5;
+    transition-duration: 0.5s;
+}
+
+/* 본체 */
+.board_main{
+    margin: 0 auto;
+    
+    padding: 0 15px;
+    width: 63%;
+}
+
+.board_head{
+    padding-bottom: 9px;
+    margin: 40px 0 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.board_head > h1{
+    display: inline-block;
+    font-size: 36px;
+}
+
+.pull_left{
+    float: left;
+}
+
+.pull_right{
+    display: inline;
+    float: right;
+}
+
+.search_block{
+    display: inline-block;
+    position: relative;
+}
+
+.search_form{
+    width: auto;
+    height: 34px;
+    padding: 6px 42.5px 6px 12px;
+    border: 1px solid #ccc;
+
+    vertical-align: middle;
+
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+}
+
+.btn_group{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.btn_group > button{
+    width: 40px;
+    height: 34px;
+}
+
+/* 중단 대시보드 */
+
+#projects{
+    margin-top: 20px;
+}
+
+.board_body{
+    margin-right: -15px;
+    margin-left: -15px;
+    
+    height: 600px;
+}
+
+.bb_l{
+    float:left;
+
+    width: 25%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.nav{
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.check > a{
+    background-color: #3498db;
+}
+
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+
+.bb_r{
+    float:left;
+
+    width: 74%;
+    min-height: 350px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.action_bar{
+    height: 40px;
+}
+
+.btn{
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+}
+
+.btn-default{
+    color: #333;
+    background-color: #fff;
+    border-color: rgb(192, 192, 192);
+}
+
+.btn_primary{
+    color: #fff;
+    background-color: #3498db;
+    border-color: #357ebd;
+}
+
+.board_list{
+    overflow: auto;
+    min-height: 350px;
+    height: auto;
+}
+
+.list_items{
+    display: flex;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.item{
+    display: flex;
+
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 33.3%;
+}
+
+.thumbnail{
+    display: block;
+    padding: 4px;
+    padding-top: 30px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+
+    line-height: 1.42857143;
+    background-color: #fff;
+}
+
+.sequence_thumbnail img{
+    display: block;
+    background-color: #C5C5C5;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+    border: 1px solid #C5C5C5;
+
+    max-width: 100%;
+    height: auto;
+}
+
+.caption{
+    padding: 9px;
+    color: #333;
+}
+
+.caption h3{
+    margin-bottom: 10px;
+
+    font-size:24px;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.caption p{
+    margin-bottom: 12px;
+
+    height: 36px;
+    line-height: 18px;
+    font-size: 12px;
+    
+    overflow: hidden;
+}
+
+.time_icon img{
+    width: 12px;
+    height: 12px;
+}
+
+.caption small{
+    display: block;
+    overflow: hidden;
+    margin-bottom: 5px;
+
+    font-size: 12px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* 하단 */
+.board_bottom{
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 63%;
+}
+
+hr{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+.footer_left{
+    display:inline-block;
+}
+
+.footer_left a{
+    margin-left: 8px;
+}
+
+.footer_right{
+    display:inline;
+    float: right;
+}
+
+.footer_right small{
+    font-size: 85%;
+}

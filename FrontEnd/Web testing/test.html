@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Web testing/css/test.css">
+    <title>Document</title>
+    <script>
+        const check = document.querySelector(".nav > li > a");
+
+        function handleClick(){
+            check.classList.add("check");
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="nav_bar">
+                <a class="nav_brand">Oven<small class="small_brand">BETA</small></a>
+            </div>
+            <ul class="nav_right">
+                <li>
+                    <a>
+                        <img src="/Web testing/img/아이콘.png" alt="" class="profile_image">
+                        <span class="name">KangDongUk</span>
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown_menu">
+                        <li><a href="#">프로젝트 대쉬보드</a></li>
+                        <li><a href="#">계정 설정하기</a></li>
+                        <li><a href="#">헬프데스크</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">로그아웃</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    </header>
+    <div class="board_main">
+        <div class="board_head">
+            <h1>프로젝트 대쉬보드</h1>
+            <div class="pull_right" style="margin-top: 25px;">
+                <div class="search_block">
+                    <input type="text" class="search_form" placeholder="프로젝트 검색">
+                </div>
+                <div class="btn_group">
+                    <button type="button">Flet</button>
+                    <button type="button">Hier</button>
+                </div>
+            </div>
+        </div>
+        <div id="projects" class="board_body">
+            <div class="bb_l">
+                <ul class="nav">
+                    <li onclick="handleClick"><a href="#">나의 프로젝트</a></li>
+                    <li onclick="handleClick"><a href="#">나에게 공유된 프로젝트</a></li>
+                </ul>
+            </div>
+            <div class="bb_r">
+                <div class="action_bar">
+                    <div class="pull_left">
+                        <button type="button" class="btn btn-default ">모두 선택</button>
+                    </div>
+                    <button type="button" class="btn btn_primary pull_right">새로운 프로젝트 만들기</button>
+                </div>
+                <div class="board_list">
+                    <div class="list_items">
+                        <div class="item">
+                            <div class="thumbnail">
+                                <div class="project_marker">
+                                    <input type="checkbox" class="pull-left">
+                                </div>
+                                <a href="#" class="sequence_thumbnail" target="_blank">
+                                    <img src="/Web testing/img/아이콘.png">
+                                </a>
+                                <div class="caption">
+                                    <h3>
+                                        <a href="#" class="project_link" target="_blank">test</a>
+                                    </h3>
+                                    <p></p>
+                                    <hr>
+                                    <div class="additional_info">
+                                        <small>
+                                            <span class="time_icon">
+                                                <img src="/Web testing/img/icons8-정사각형-시계-24.png">
+                                            </span>
+                                            <strong>3시간 전</strong>
+                                        </small>
+                                        <small>
+                                            <a href="#" class="label label-success public_read" title="">
+                                                로그인없이 테스트 가능
+                                            </a>
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="board_bottom">
+        <footer>
+            <hr>
+            <adress>
+                <div class="footer_left">
+                    Oven
+                    <a href="/static/policy/servicepolicy_latest.html" target="_blank">
+                        서비스 이용약관 및 운영원칙
+                    </a>
+                    <a href="/static/policy/userpolicy_latest.html" target="_blank">
+                        <strong>개인정보처리방침</strong>
+                    </a>
+                </div>
+                <div class="footer_right">
+                    <small>© 2015-2016 Kakao Corp.</small>
+                </div>
+            </adress>
+        </footer>
+    </div>
+</body>
+</html>
