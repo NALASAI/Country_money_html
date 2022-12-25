@@ -6,13 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/Web testing/css/test.css">
     <title>Document</title>
-    <script>
-        const check = document.querySelector(".nav > li > a");
-
-        function handleClick(){
-            check.classList.add("check");
-        }
-    </script>
 </head>
 <body>
     <header>
@@ -55,8 +48,8 @@
         <div id="projects" class="board_body">
             <div class="bb_l">
                 <ul class="nav">
-                    <li onclick="handleClick"><a href="#">나의 프로젝트</a></li>
-                    <li onclick="handleClick"><a href="#">나에게 공유된 프로젝트</a></li>
+                    <li><a id="checked" href="#">나의 프로젝트</a></li>
+                    <li><a id="uncheck" href="#">나에게 공유된 프로젝트</a></li>
                 </ul>
             </div>
             <div class="bb_r">

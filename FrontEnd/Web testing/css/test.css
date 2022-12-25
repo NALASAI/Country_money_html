@@ -253,14 +253,21 @@ h1{
     list-style: none;
 }
 
-.check > a{
-    background-color: #3498db;
-}
-
-.nav>li>a {
+#checked {
     position: relative;
     display: block;
     padding: 10px 15px;
+
+    background-color: #3498db;
+    color: #fff;
+}
+
+#uncheck {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+
+    color: #3498db;
 }
 
 .bb_r{
