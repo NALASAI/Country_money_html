@@ -92,6 +92,7 @@ h1{
 
 .nav_right li:hover > .dropdown_menu{
     display: block;
+    background-color: #fff;
 }
 
 .nav_right > li > a{
@@ -324,7 +325,7 @@ h1{
 }
 
 .item{
-    display: flex;
+    display: inline-block;
 
     padding-right: 15px;
     padding-left: 15px;
@@ -343,6 +344,11 @@ h1{
     background-color: #fff;
 }
 
+.sequence_thumbnail{
+    border: 1px solid #C5C5C5;
+    background-color: #b9b1b1;
+}
+
 .sequence_thumbnail img{
     display: block;
     background-color: #C5C5C5;
@@ -353,6 +359,7 @@ h1{
 
     max-width: 100%;
     height: auto;
+    margin: 0 auto;
 }
 
 .caption{
