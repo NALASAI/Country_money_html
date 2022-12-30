@@ -1,0 +1,162 @@
+body{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    display: flex;
+}
+
+/* Side navigation */
+.side-nav-bar{
+    height: 100vh;
+    top: 0;
+    left: 0;
+    padding: 10px;
+
+    background-color: #c4c4c4;
+}
+.side-nav-item{
+    height: 40px;
+    padding-bottom: 30px;
+
+    display: block;
+}
+.side-nav-icon{
+    width: 40px;
+    height: 40px;
+}
+
+/* contents 광고이미지 */
+.main-container{
+    height: 100vh;
+    width: 100vw;
+}
+
+.main-cover{
+    width: 100%;
+    height: 300px;
+
+    object-fit: cover;
+}
+
+/* contents nav-bar */
+.main-nav-bar{
+    padding-top: 11px;
+    padding-bottom: 15px;
+
+    display: flex;
+    justify-content: space-around;
+}
+.main-nav-item{
+    font-size: 24px;
+    color: #000000;
+}
+.divider{
+    border: 1px solid #999494;
+}
+
+/* contents form-container */
+.form-container{
+    display: flex;
+    justify-content: center;
+
+    margin: 0 auto;
+    width: 80%;
+}
+.form-contents{
+    text-align: center;
+
+    margin: 0 auto;
+    width: 80%;
+    height: 500px;
+}
+.form-title{
+    text-align: center;
+}
+.form-table{
+    width: 100%;
+    height: 300px;
+    
+    padding: 0 160px;
+
+    margin-bottom: 50px;
+}
+.form-table-row{
+    width: 100%;
+    height: auto;
+}
+.row-label{
+    padding-right: 20px;
+    text-align: right;
+
+    font-size: 20px;
+    font-weight: 600;
+}
+#row-textarea-title{
+    vertical-align: top;
+
+    padding-top: 10px;
+}
+#row-input{
+    text-align: left;
+
+    width: auto;
+}
+.form-input{
+    width: 80%;
+    height: 30px;
+
+    margin: 0 auto 0 0;
+    border: 1px solid black;
+    border-radius: 10px;
+
+    font-size: 16px;
+}
+#emailId{
+    width: 40%;
+}
+.form-select{
+    width: 35%;
+    height: 35px;
+
+    border: 1px solid black;
+    border-radius: 10px;
+
+    font-size: 16px;
+}
+.form-textarea{
+    width: 80%;
+    resize: none;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    border: 1px solid black;
+    border-radius: 10px;
+}
+#contents{
+    height: 100%;
+    
+}
+
+/* form-button-container */
+.form-button-container{
+    display: flex;
+    justify-content: space-around;
+
+    width: 80%;
+    margin: 0 auto;
+}
+.form-btn{
+    width: 150px;
+    height: 60px;
+
+    background-color: #1a8fdd;
+    border: 0;
+    border-radius: 10px;
+
+    color: #ffffff;
+    font-size: 24px;
+}
